@@ -352,6 +352,28 @@ body {
 }
 /* ===== END OUR TEAM ===== */
 
+/* ===== CLIENTS ===== */
+
+.clients-list {
+  display: flex;
+}
+
+.clients-list .item {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-list .item.item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-svg {
+}
+
+/* ===== END CLIENTS ===== */
+
 /* ===== FOOTER ===== */
 .footer {
   background-color: var(--secondary-background-color);
@@ -368,8 +390,6 @@ body {
 
 .footer .container {
   display: flex;
-  /* padding-top: 60px;
-  padding-bottom: 60px; */
 }
 
 .footer .link {
