@@ -142,6 +142,7 @@ body {
 
 .header .container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -167,6 +168,8 @@ body {
 
 .address-list {
   display: flex;
+
+  /* align-items: center; */
   margin-left: auto;
 }
 
@@ -187,10 +190,10 @@ body {
 }
 
 .address-link .link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -209,6 +212,12 @@ body {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
+.header-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 /* ===== END HEADER ===== */
 
 /* ===== HERO ===== */
