@@ -8,6 +8,7 @@
   --main-background-color: #ffffff;
   --secondary-background-color: #2f303a;
   --the-third-background-color: #f5f4fa;
+  --primary-svg-color: #afb1b8;
 }
 
 *,
@@ -315,20 +316,56 @@ img {
 }
 
 .team-card {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
   background-color: var(--main-background-color);
   text-align: center;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 
-.team-list .item {
+.social-list {
+  display: flex;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: var(--main-background-color);
+  border-radius: 50%;
+  color: var(--primary-svg-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--the-third-text-color);
+  background-color: var(--accent-color);
+}
+
+.team-svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.team-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-list .item:not(:last-child) {
   margin-right: 30px;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .team-subtitle {
@@ -340,6 +377,7 @@ img {
 }
 
 .team-position {
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -350,10 +388,7 @@ img {
 /* ===== CLIENTS ===== */
 .clients-list {
   display: flex;
-}
-
-.clients-list .item:not(:last-child) {
-  margin-right: 30px;
+  justify-content: space-between;
 }
 
 .link-clients {
@@ -362,9 +397,9 @@ img {
   justify-content: center;
   width: 170px;
   height: 90px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--primary-svg-color);
   border-radius: 4px;
-  color: #afb1b8;
+  color: var(--primary-svg-color);
 }
 
 .client-svg {
