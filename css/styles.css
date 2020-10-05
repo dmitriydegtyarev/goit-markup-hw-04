@@ -274,6 +274,36 @@ img {
   margin-right: 30px;
 }
 
+.about-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  width: 270px;
+  margin-bottom: 30px;
+  background-color: var(--the-third-background-color);
+  background-repeat: no-repeat;
+}
+
+.about-item:nth-child(1)::before {
+  background-image: url(../images/feature1.svg);
+  background-position: center center;
+}
+
+.about-item:nth-child(2)::before {
+  background-image: url(../images/feature2.svg);
+  background-position: center center;
+}
+
+.about-item:nth-child(3)::before {
+  background-image: url(../images/feature3.svg);
+  background-position: center center;
+}
+
+.about-item:nth-child(4)::before {
+  background-image: url(../images/feature4.svg);
+  background-position: center center;
+}
+
 .about-subtitle {
   margin-bottom: 10px;
   font-size: 14px;
